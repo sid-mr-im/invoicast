@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <title>Invoicast</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <img src="https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F84ffc2b07aff4f5b9801c988cb255d38?format=webp&width=50   50w,"></img>
+      <a href="#companyname">Invoicast</a>
+      <img src="https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F110484275dc54544a1133c3d3fb9be11?format=webp&width=50   50w,"></img>
+    </div>
+    <div class="midnav">
+      <p><input type="file"  accept="*" name="image" id="excel_file"  onclick="displayExcel()" style="display: none;"></p>
+      <button><img src="https://cdn.builder.io/api/v1/image/assets%2FTEMP%2Feb573ef756fe4db6ad70a9a256ce4285?format=webp&width=25   25w"/><label for="excel_file" style="cursor: pointer;">UPLOAD</label></button>
+      <button type="button"><img src="https://cdn.builder.io/api/v1/image/assets%2FTEMP%2Fe4135352d9d84931b0b9bcfd0e314f57?width=25   25w,"/>PREDICT</button>
+      <button type="button" onclick="downloadExcel('excel_data')"><img src="https://cdn.builder.io/api/v1/image/assets%2FTEMP%2Fd787f4375d8e40f5af41f67f0d6ce5ee?format=webp&width=25   25w,"/>DOWNLOAD</button>
+      <form id="form"> 
+        <input type="search" id="query" name="q" placeholder="Search...">
+        <button><img src=" https://cdn.builder.io/api/v1/image/assets%2FTEMP%2Fac004d87a5724605ba5dbb8cdd9619b4?format=webp&width=25   25w,">Search</button>
+      </form>
+    </div>
+    <div id="excel_data" class="mt-5"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

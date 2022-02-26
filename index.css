@@ -1,0 +1,234 @@
+<style>
+  .div {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .div-2 {
+    display: flex;
+    max-width: 1440px;
+    height: 90px;
+    width: 1440px;
+    background-color: rgba(196, 196, 196, 1);
+  }
+  .div-3 {
+    display: flex;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 50px;
+    width: 50px;
+  }
+  .image {
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .image-sizer {
+    width: 100%;
+    padding-top: 100%;
+    pointer-events: none;
+    font-size: 0;
+  }
+  .div-4 {
+    display: flex;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 50px;
+    width: 50px;
+  }
+  .div-5 {
+    max-width: 302px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: Roboto, sans-serif;
+  }
+  .div-6 {
+    display: flex;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 25px;
+    width: 25px;
+  }
+  .div-7 {
+    display: flex;
+    max-width: 440px;
+    height: 50px;
+    width: 440px;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 0, 1);
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .div-8 {
+    display: flex;
+    max-width: 106px;
+    height: 50px;
+    width: 106px;
+    border-radius: 20px;
+    background-color: rgba(196, 196, 196, 1);
+  }
+  .div-9 {
+    display: flex;
+    max-width: 138px;
+    height: 50px;
+    width: 138px;
+    border-radius: 20px;
+    background-color: rgba(196, 196, 196, 1);
+  }
+  .div-10 {
+    display: flex;
+    max-width: 155px;
+    height: 50px;
+    width: 155px;
+    border-radius: 20px;
+    background-color: rgba(196, 196, 196, 1);
+  }
+  .div-11 {
+    max-width: 91px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+  }
+  .div-12 {
+    max-width: 91px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+  }
+  .div-13 {
+    max-width: 345px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+  }
+  .div-14 {
+    max-width: 120px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+  }
+  .div-15 {
+    display: flex;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 25px;
+    width: 25px;
+  }
+  .div-16 {
+    display: flex;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 25px;
+    width: 25px;
+  }
+  .div-17 {
+    display: flex;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 25px;
+    width: 25px;
+  }
+  .div-18 {
+    max-width: 107px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: Roboto, sans-serif;
+  }
+  .div-19 {
+    display: flex;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 50px;
+    width: 50px;
+  }
+  .div-20 {
+    display: flex;
+    max-width: 369.0013732910156px;
+    height: 0px;
+    width: 369.0013732910156px;
+    border-color: rgba(0, 0, 0, 1);
+    border-width: 1px;
+    border-style: solid;
+  }
+  .div-21 {
+    display: flex;
+    max-width: 965px;
+    height: 758px;
+    width: 965px;
+    border-radius: 10px;
+    background-color: rgba(196, 196, 196, 1);
+  }
+  .div-22 {
+    display: flex;
+    max-width: 367px;
+    height: 758px;
+    width: 367px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 1);
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .div-23 {
+    display: flex;
+    max-width: 248px;
+    height: 50px;
+    width: 248px;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 0, 1);
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .div-24 {
+    display: flex;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 50px;
+    width: 50px;
+  }
+  .div-25 {
+    display: flex;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 50px;
+    width: 50px;
+  }
+  .div-26 {
+    max-width: 178px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+    font-family: Roboto, sans-serif;
+  }
+</style>
