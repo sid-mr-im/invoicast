@@ -7,20 +7,20 @@ from pandas.core.dtypes.missing import isna
 
 #import csv
 
-dataset = pd.read_excel("music.xlsx")
+dataset = pd.read_excel("inputdata.xlsx")
 
 dataset[dataset.duplicated(["id"])]
 
 dataset = dataset.drop_duplicates()
 len(dataset[dataset.duplicated(["id"])])
 
-maindataset=dataset[dataset["genre"].notnull()]
-nulldataset=dataset[dataset["genre"].isnull()]
+maindataset=dataset[dataset["delay"].notnull()]
+nulldataset=dataset[dataset["delay"].isnull()]
 #print(maindataset)
 #print(nulldataset)
 
-X = maindataset.drop(columns=["id", "genre"])
-y = maindataset["genre"]
+X = maindataset.drop(columns=["id", "delay"])
+y = maindataset["delay"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 model = DecisionTreeClassifier()
@@ -37,9 +37,9 @@ def predictResult(input1, input2):
   #print(output)
   return output
 
-input_set1 = nulldataset["age"]
+input_set1 = nulldataset["bill"]
 #print(input_set1)
-input_set2 = nulldataset["gender"]
+input_set2 = nulldataset["due"]
 #print(input_set2)
 limit_value = first_key + len(input_set1)
 while(first_key<limit_value):
@@ -59,7 +59,7 @@ for i in range(len(nulldatalist)):
   else:
     pass
 finaldatalist = maindatalist + nulldatalist
-finaldataset = pd.DataFrame(finaldatalist, columns=['id','age', 'gender', 'genre'])
+finaldataset = pd.DataFrame(finaldatalist, columns=['id','bill', 'due', 'delay'])
 finaldataset.to_excel('finalprediction.xlsx')
 pickle.dump(DecisionTreeClassifier, open('model/model.pkl','wb'))
 #score = accuracy_score(y_test, predictions)

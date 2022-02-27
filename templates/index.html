@@ -17,12 +17,13 @@
     <div class="midnav">
       <p></p>
       <button><input type="file"  accept="*" name="/image" id="excel_file"  onclick="displayExcel()" style="display: none;"><img src="/imassets/Upload.png"/><label for="excel_file" style="cursor: pointer;">UPLOAD</label></button>
-      <button type="button" onclick="predictData()"><img src="/imassets/Predict.png"/>PREDICT</button>
+      <form action="{{ url_for('main') }}" method="POST"><button type="button" onclick="predictData()"><img src="/imassets/Predict.png"/>PREDICT</button></button></form>
       <button type="button" onclick="downloadExcel('excel_data')"><img src="/imassets/Download.png"/>DOWNLOAD</button>
       <p></p>
       <form id="form"><input type="search" id="query" name="q" placeholder="Search..."><button><img src="/imassets/Search.png">Search</button></form>
     </div>
     <div id="excel_data" class="mt-5"></div>
+    <!-- <p style="font-size:50px">{{ excel_data }}</p> -->
     <script src="/static/index.js"></script>
   </body>
 </html>
