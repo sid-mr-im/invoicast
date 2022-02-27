@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -26,4 +27,34 @@
     <!-- <p style="font-size:50px">{{ excel_data }}</p> -->
     <script src="index.js"></script>
   </body>
+=======
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <title>Invoicast</title>
+    <link rel="icon" type="image" href="/imassets/CompanyLogo.png" />
+  </head>
+  <body>
+    <div class="topnav">
+      <img src="/imassets/CompanyLogo.png"></img>
+      <a href="#companyname">Invoicast</a>
+      <img src="/imassets/User.png"></img>
+    </div>
+    <div class="midnav">
+      <p></p>
+      <button><input type="file"  accept="*" name="/image" id="excel_file"  onclick="displayExcel()" style="display: none;"><img src="/imassets/Upload.png"/><label for="excel_file" style="cursor: pointer;">UPLOAD</label></button>
+      <form action="{{ url_for('main') }}" method="POST"><button type="button" onclick="predictData()"><img src="/imassets/Predict.png"/>PREDICT</button></button></form>
+      <button type="button" onclick="downloadExcel('excel_data')"><img src="/imassets/Download.png"/>DOWNLOAD</button>
+      <p></p>
+      <form id="form"><input type="search" id="query" name="q" placeholder="Search..."><button><img src="/imassets/Search.png">Search</button></form>
+    </div>
+    <div id="excel_data" class="mt-5"></div>
+    <!-- <p style="font-size:50px">{{ excel_data }}</p> -->
+    <script src="/static/index.js"></script>
+  </body>
+>>>>>>> 982adb16894e6a69d9f6433786720b938280d682
 </html>
